@@ -1,0 +1,26 @@
+1 dalis: Front-end programavimas panaudojant HTML / CSS / Bootstrap:
+
+HTML pagrindai: Tagai, atributai, pagrindiniai elementai. Sąrašai ir lentelės. Paveiksliukai ir video.
+Puslapio struktūra: Puslapio struktūros elementai – header, footer, div.
+CSS pagrindai: Kas yra CSS, stilių panaudojimas ir baziniai pavyzdžiai, sintaksė.
+CSS tekstai, šriftai, spalvos: Darbas su teksto apipavidalinimu ir jo elementais.
+HTML formos: Formos ir jų elementai
+Rėmai, pozicijos: Elementų pozicionavimas, margin/padding, rėmeliai, float.
+Responsive design pagrindai: Kas yra responsive design, media queries ir mobilios versijos.
+Twitter Bootstrap karkasas: Kas yra Twitter Bootstrap, jo klasės ir elementai, jo pagrindu sukurtų šablonų pavyzdžiai.
+
+
+2 dalis. JavaScript programavimo kalba
+
+JavaScript sintaksė, stiliaus taisyklės
+Kintamieji, duomenų tipai, operatoriai, sąlygos sakiniai, funkcijos, ciklai
+DOM manipuliavimas, interaktyvumas
+Klaidų valdymas (debugging, error handling)
+Objektinis programavimas su JavaScript
+Paveldėjimas ir prototipai
+Kreipimasis į serverį (JavaScript XML ir AJAX, JSONP)
+Asinschroninis programavimas (promises, callbacks, listeners)
+JavaScript APIs (canvas, geolocation, web workers, web sockets)
+JavaScript modulių sistemos (Common JS, AMD, ES2015)
+JavaScript aplikacijos testavimas
+Automatizavimas (Gulp, WebPack)
