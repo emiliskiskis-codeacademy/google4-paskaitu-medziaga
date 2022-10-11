@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>LGL pirmas projektas</title>
+
+    <style>
+      a {
+        background-color: yellow;
+      }
+
+      p {
+        color: darkkhaki;
+      }
+
+      .pasisveikinimas {
+        color: blue !important;
+      }
+
+      .platu {
+        width: 500px;
+      }
+
+      #citata {
+        color: red;
+        font-size: 16pt;
+      }
+
+      #pirmoji-antraste {
+        /* text-align: center; */
+        width: fit-content;
+        margin: 0 auto;
+
+        border: 2px dashed red;
+        padding: 10px;
+        padding-top: 20px;
+      }
+
+      .empty-margin {
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+  </head>
+  <body>
+    <p>Hello world!</p>
+    <p class="pasisveikinimas">Sveiki atvykę į CodeAcademy!</p>
+
+    <a href="https://www.google.com/">Nuoroda į Google</a>
+
+    <h1 id="pirmoji-antraste">Pirmoji antraštė</h1>
+    <h2>Antroji antraštė</h2>
+    <h3>Trečioji antraštė</h3>
+    <h4>Ketvirtoji antraštė</h4>
+    <h5>Penktoji antraštė</h5>
+    <h6>Šeštoji antraštė</h6>
+
+    <p>Pastraipa palyginimui</p>
+
+    <!-- komentaras -->
+
+    <div style="padding: 1px" class="empty-margin"></div>
+
+    <p class="pasisveikinimas" id="citata">
+      My cat is
+      <i>
+        very
+        <b>very</b>
+      </i>
+      grumpy.
+    </p>
+
+    Todo list:
+    <ul style="border: 1px solid red; width: 400px">
+      <li>Išplauti indus</li>
+      <li>Išklausyti CA paskaitos</li>
+      <li>Padaryti namų darbus</li>
+    </ul>
+
+    Labai skanaus kebabo receptas:
+
+    <p>Ingredientai:</p>
+    <ul>
+      <li>lavašas 1 vnt.</li>
+      <li>300g jautienos</li>
+      <li>daržovių 100 g</li>
+    </ul>
+    <ol>
+      <li>
+        iškepkite mėsą
+        <ol>
+          <li>mėsą kepkite 10 min</li>
+        </ol>
+      </li>
+      <li>pašildykite lavašą</li>
+      <li>sudėkite mėsą ir daržoves</li>
+      <li>suvyniokite</li>
+    </ol>
+    <p>Skanaus!</p>
+
+    <button onclick="alert('Ačiū, kad paspaudei!')">Paspausk mane!</button>
+
+    <form>
+      <div>
+        <label>Vardas:</label>
+        <input />
+      </div>
+
+      <div>
+        <label>Pavardė:</label>
+        <input />
+      </div>
+    </form>
+
+    <img
+      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia-exp1.licdn.com%2Fdms%2Fimage%2FC560BAQHBH44ostEj3g%2Fcompany-logo_200_200%2F0%3Fe%3D2159024400%26v%3Dbeta%26t%3D8mMCFIVy_umUoOENwzc02Cj9crMLrp2j0qXDE8Yyo_A&f=1&nofb=1&ipt=feb06dc867dde2a714cbf53424c102f2cd6e64619d3e3cdce05d41bb1d657be4&ipo=images"
+    />
+    <img
+      src="https://www.kleonard.com/kltunes/images/basement2.jpg"
+      alt="Programuotojas (suaugęs vyras tamsoje prie kompiuterio)"
+    />
+    <img src="images/grozis.png" width="400" />
+  </body>
+</html>
