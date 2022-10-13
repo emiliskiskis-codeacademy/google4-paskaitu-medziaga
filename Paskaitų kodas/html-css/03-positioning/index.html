@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementų išdėstymas puslapyje</title>
+    <!-- Mūsų stiliai -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Normalize stiliai -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+  </head>
+  <body>
+    <header class="sticky"></header>
+    <h1>Pozicionuojame elementus</h1>
+
+    <article>
+      <h2>Float/clear</h2>
+      <img
+        class="float-right"
+        width="515"
+        src="landscape.jpg"
+        alt="Landscape"
+      />
+      <p id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+        maxime facere, velit dolore qui doloremque nam eos eveniet veritatis
+        molestias, perspiciatis ea corporis quis cum omnis aut voluptas quidem
+        repudiandae!
+      </p>
+      <p class="clear-float">
+        Nisi aliquip do ea eu mollit nostrud adipisicing laborum mollit.
+        Proident elit non sit aliquip quis nisi fugiat culpa nulla. Et eu do
+        consectetur id eu duis id fugiat non pariatur. Dolore irure anim elit
+        dolore ullamco laboris amet mollit veniam veniam. Esse ad ullamco
+        excepteur tempor ullamco ut nulla. Sint culpa cillum aliquip anim sint
+        sunt reprehenderit exercitation.
+      </p>
+      <p>
+        Odit alias vitae voluptatibus maxime quo ipsam accusantium dolore
+        voluptas expedita, tempora ad nemo vero libero possimus ea. Impedit
+        reiciendis delectus laboriosam repudiandae praesentium omnis ad amet
+        doloribus tempore tempora?
+      </p>
+      <p>
+        Laudantium fugit placeat culpa dicta esse quo velit architecto labore,
+        atque adipisci a est dolor, odit modi. Similique perspiciatis iusto
+        atque? Provident, exercitationem delectus id autem culpa ipsa quia
+        magni.
+      </p>
+      <p>
+        Est sint dolor, nisi error facilis, amet sunt ea illo aspernatur
+        repellat commodi magni animi doloribus molestias incidunt non quos
+        itaque labore inventore nostrum tempore accusantium numquam. Sint,
+        consectetur ea?
+      </p>
+      <p>
+        Vel dolor recusandae pariatur aspernatur unde vero, cupiditate qui
+        corrupti ea odio provident atque laborum aliquam, doloribus aliquid
+        totam ex repudiandae earum deleniti voluptatum dolorem rem. Sed illum
+        quia tempore.
+      </p>
+    </article>
+    <article>
+      <!-- <h2 class="sticky2nd">width/height</h2> -->
+      <p class="small-width">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nisi quo
+        ad hic repellendus itaque. Numquam animi optio nulla. Iste fuga dolorem
+        cum doloribus perspiciatis quasi praesentium laboriosam tempora numquam?
+      </p>
+      <p>
+        Laboriosam sequi repellendus rerum neque quidem, aut esse repellat in
+        non amet molestias deleniti sunt nihil minima corporis. Ea reprehenderit
+        delectus quia similique eum quisquam culpa? Itaque magnam nulla
+        doloribus.
+      </p>
+      <p class="half-width">
+        Inventore placeat maxime laboriosam dignissimos cumque officiis ratione
+        quaerat repudiandae rerum vero facilis incidunt autem, repellendus natus
+        deserunt, temporibus sit unde laudantium. Expedita atque harum id ipsum,
+        ex fugiat quia!
+      </p>
+
+      <div class="background-color half-width">
+        <p style="width: 75%">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum impedit,
+          corrupti minima perferendis rerum quod deserunt, quisquam iusto sed
+          amet fugit! Autem nulla voluptatum mollitia quas dolorem odio possimus
+          debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Maxime non et veniam inventore voluptate esse dicta, numquam
+          temporibus quasi est, laborum necessitatibus suscipit doloribus
+          reprehenderit minima, tempora vitae odit aspernatur.
+        </p>
+      </div>
+
+      <div class="red container">
+        <div class="blue item">
+          <div class="content-width">
+            <p>Nedaug teksto</p>
+            <p class="">Šiek tiek daugiau teksto, kad matytųsi</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+              odio voluptatibus reiciendis natus vero a eligendi repudiandae
+              dolore cumque perspiciatis! Odit hic maiores aut, dolorum deleniti
+              iure autem voluptatum necessitatibus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <h2>position</h2>
+
+      <div class="red container relative">
+        <div class="blue item absolute">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis odio
+            voluptatibus reiciendis natus vero a eligendi repudiandae dolore
+            cumque perspiciatis.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <h2>min/max -width/height</h2>
+      <p class="max-width">Lorem ipsum</p>
+      <p class="max-width">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit
+      </p>
+      <p class="max-width">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni
+        at fuga odio esse. In repellat atque nemo at blanditiis nihil unde, ab
+        quisquam eaque omnis cum, eum fugiat culpa!
+      </p>
+
+      <div class="fit-content">
+        <p class="min-width">Lorem ipsum</p>
+        <p class="min-width">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit
+        </p>
+        <p class="min-width">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni
+          at fuga odio esse. In repellat atque nemo at blanditiis nihil unde, ab
+          quisquam eaque omnis cum, eum fugiat culpa!
+        </p>
+      </div>
+    </article>
+  </body>
+</html>

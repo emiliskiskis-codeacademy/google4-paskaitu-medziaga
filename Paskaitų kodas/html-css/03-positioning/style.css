@@ -1,0 +1,141 @@
+/*
+  float: left | right
+  clear: left | right | both
+
+  width, height, min-width, min-height, max-width, max-height:
+    px | em | rem | % | fit-content | min-content | max-content
+
+  position: static
+  position: relative
+  position: absolute
+  position: fixed
+  position: sticky
+
+  padding, border, margin
+*/
+
+html {
+  /* font-size: 20pt; */
+}
+
+p {
+  margin: 16px 0;
+}
+
+.float-right {
+  float: right;
+  margin-left: 10px;
+  /* margin-bottom: 0px; */
+}
+
+.float-left {
+  float: left;
+  margin-right: 10px;
+}
+
+.clear-float {
+  clear: right;
+}
+
+#first {
+  border: 0.125em solid red;
+  overflow: auto;
+}
+
+.small-width {
+  /* font-size: 20pt; */
+  width: 20rem; /* 1em = 1 font size */
+  /* height: 50px; */
+  border-right: 1px solid red;
+}
+
+.half-width {
+  width: 50%;
+  border-right: 1px solid red;
+}
+
+.background-color {
+  background-color: cadetblue;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.container {
+  width: 300px;
+  height: 200px;
+  margin: 50px auto;
+}
+
+.item {
+  width: 50%;
+  height: 75%;
+}
+
+.content-width > p {
+  background-color: rgb(42, 210, 210);
+  width: fit-content;
+}
+
+.absolute {
+  position: absolute;
+
+  left: 75px;
+  top: 25px;
+  /* right: 0; */
+}
+
+.relative {
+  position: relative;
+  /* top: 50px; */
+  /* right: 50px; */
+}
+
+.fixed {
+  position: fixed;
+
+  bottom: 50px;
+  left: 50px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.item p {
+  margin: 0;
+}
+
+.item.absolute,
+.item.fixed,
+.item.sticky {
+  width: 150px;
+  height: 150px;
+}
+
+header {
+  background-color: white;
+  border: 1px solid black;
+  height: 50px;
+}
+
+.max-width {
+  max-width: 400px;
+  background-color: aqua;
+}
+
+.min-width {
+  min-width: 400px;
+  background-color: aqua;
+}
+
+.fit-content {
+  width: fit-content;
+}
