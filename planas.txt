@@ -4,7 +4,7 @@
 [x] Puslapio struktūra: Puslapio struktūros elementai – header, footer, div.
 [x] CSS pagrindai: Kas yra CSS, stilių panaudojimas ir baziniai pavyzdžiai, sintaksė.
 [x] Rėmai, pozicijos: Elementų pozicionavimas, margin/padding, rėmeliai, float.
-[ ] CSS tekstai, šriftai, spalvos: Darbas su teksto apipavidalinimu ir jo elementais.
+[x] CSS tekstai, šriftai, spalvos: Darbas su teksto apipavidalinimu ir jo elementais.
 [ ] HTML formos: Formos ir jų elementai
 [ ] Responsive design pagrindai: Kas yra responsive design, media queries ir mobilios versijos.
 [ ] Twitter Bootstrap karkasas: Kas yra Twitter Bootstrap, jo klasės ir elementai, jo pagrindu sukurtų šablonų pavyzdžiai.

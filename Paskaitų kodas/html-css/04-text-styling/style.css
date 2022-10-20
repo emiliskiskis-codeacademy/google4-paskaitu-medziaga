@@ -1,0 +1,61 @@
+/*
+  font-family
+  font-size
+  font-weight
+  font-style
+
+  text-align: left | right | center | justify
+  text-decoration
+  text-overflow
+    overflow: hidden;
+    white-space: nowrap;
+  text-shadow
+  text-transform
+
+  letter-spacing
+  line-height
+  vertical-align
+*/
+
+body {
+  font-family: Montserrat, Helvetica, "Comic Sans MS", sans-serif;
+  /* font-family: "Cartograph CF", monospace; */
+}
+
+p {
+  text-align: justify;
+}
+
+.underline {
+  text-decoration: underline 1px wavy red;
+}
+
+.deleted {
+  text-decoration: line-through 1px red;
+}
+
+.added {
+  background-color: lightgreen;
+}
+
+.shadow {
+  text-shadow: 0 0 4px red;
+}
+
+.transform {
+  text-transform: uppercase;
+}
+
+.nowrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: "...";
+}
+
+.wide {
+  letter-spacing: 0.5rem;
+}
+
+.short {
+  line-height: 1.5;
+}
