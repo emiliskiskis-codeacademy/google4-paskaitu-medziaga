@@ -1,6 +1,6 @@
 1 dalis: Front-end programavimas panaudojant HTML / CSS / Bootstrap:
 
-[ ] HTML pagrindai: Tagai, atributai, pagrindiniai elementai. Sąrašai ir lentelės. Paveiksliukai ir video.
+[x] HTML pagrindai: Tagai, atributai, pagrindiniai elementai. Sąrašai ir lentelės. Paveiksliukai ir video.
 [x] Puslapio struktūra: Puslapio struktūros elementai – header, footer, div.
 [x] CSS pagrindai: Kas yra CSS, stilių panaudojimas ir baziniai pavyzdžiai, sintaksė.
 [x] Rėmai, pozicijos: Elementų pozicionavimas, margin/padding, rėmeliai, float.
