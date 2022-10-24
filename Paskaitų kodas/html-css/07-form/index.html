@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+      <input>: naudojamas norint gauti įvairių tipų įvesties duomenis iš formos, pvz., teksto, slaptažodžio, el. pašto ir kt., keičiant jo tipą.
+        type:
+          - checkbox v
+          - date v
+          - datetime-local v
+          - file v
+          - radio v
+          - range v
+          - text (numatytasis) v
+          - time v
+          fancy tekstas:
+          - email
+          - number v
+          - password v
+          - search
+          - tel
+          - url
+          mygtukai:
+          - button v
+          - reset v
+          - submit v
+          retai naudingi:
+          - color
+          - hidden
+          - image
+          - month
+          - week
+      <label>: apibrėžia <form> elementų etiketę. v
+      <button>: apibrėžiamas mygtukas, skirtas valdyti kitus elementus arba vykdyti funkcijas. v
+      <select>: naudojamas išskleidžiamam sąrašui sukurti. v
+      <option>: naudojamas apibrėžti parinktims iš išskleidžiamojo sąrašo. v
+      <textarea>: naudojamas įvesti ilgo teksto turinį.
+      <fieldset>: naudojamas nubrėžti langelį aplink kitus formos elementus ir grupuoti susijusius duomenis. v
+      <legend>: apibrėžia laukų rinkinio elementų antraštę. v
+      <datalist>: naudojamas iš anksto apibrėžtoms įvesties valdiklių sąrašo parinktims nurodyti.
+      <optgroup>: naudojamas grupėmis susijusioms parinktims apibrėžti iš išskleidžiamojo sąrašo. v
+      <output>: rodo atliktų skaičiavimų išvestį.
+    -->
+    <form>
+      <div>
+        <label for="first-name">Vardas</label>
+        <input id="first-name" name="first-name" required value="Emilis" />
+      </div>
+      <div>
+        <label for="last-name">Pavardė</label>
+        <input id="last-name" name="last-name" placeholder="Įveskite..." />
+      </div>
+      <div>
+        <label for="age">Amžius</label>
+        <input id="age" name="age" type="number" min="1" max="99" step="0.1" />
+      </div>
+      <div>
+        <fieldset>
+          <legend>Lytis</legend>
+          <div>
+            <input id="sex-male" name="sex" type="radio" value="m" />
+            <label for="sex-male">Vyras</label>
+          </div>
+          <div>
+            <input id="sex-female" name="sex" type="radio" value="f" />
+            <label for="sex-female">Moteris</label>
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        <label for="dob">Gimimo data</label>
+        <input
+          id="dob"
+          name="dob"
+          type="date"
+          min="1900-01-01"
+          max="2022-10-24"
+        />
+      </div>
+      <div>
+        <label for="tob">Gimimo laikas</label>
+        <input id="tob" name="tob" type="time" min="10:00" max="18:00" />
+      </div>
+      <!-- <input name="date" type="datetime-local" value="2022-10-11T10:00" /> -->
+      <div>
+        <label for="city">Miestas</label>
+        <select id="city" name="city" required multiple>
+          <option value="" disabled selected hidden></option>
+          <optgroup label="Didmiesčiai">
+            <option value="Vilnius">Vilnius</option>
+            <option value="Kaunas">Kaunas</option>
+            <option value="Klaipeda">Klaipėda</option>
+            <option value="Siauliai">Šiauliai</option>
+            <option value="Panevezys">Panevėžys</option>
+          </optgroup>
+          <optgroup label="Miestai">
+            <option value="Elektrenai">Elektrėnai</option>
+            <option value="Kaisiadorys">Kaišiadorys</option>
+            <option value="Kretinga">Kretinga</option>
+            <option value="Palanga">Palanga</option>
+            <option value="Telsiai">Telšiai</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="loan">Norima paskolos suma:</label>
+        <input
+          id="loan"
+          name="loan-amount"
+          type="range"
+          min="1000"
+          max="20000"
+          oninput="getElementById('loan-amount-display').innerText=event.target.value+' €'"
+        />
+        <span id="loan-amount-display"></span>
+      </div>
+      <div>
+        <label for="password">Įveskite slaptažodį:</label>
+        <input id="password" name="password" type="password" />
+      </div>
+      <div>
+        <label for="identity">Asmens tapatybės dokumentas:</label>
+        <!-- <button
+          type="button"
+          style="
+            border: none;
+            background-color: rgb(255, 199, 199);
+            padding: 5px 10px;
+            border-radius: 4px;
+            color: rgb(51, 51, 51);
+          "
+          onclick="getElementById('identity').click()"
+        >
+          Įdėkite failą!
+        </button> -->
+        <input id="identity" name="identity" type="file" accept="*/*" />
+      </div>
+      <div>
+        <input id="agree" name="agree" type="checkbox" />
+        <label for="agree">Sutinku su puslapio taisyklėmis</label>
+      </div>
+      <button>Užsiregistruoti</button>
+      <input type="reset" value="Išvalyti formą" />
+    </form>
+  </body>
+</html>
