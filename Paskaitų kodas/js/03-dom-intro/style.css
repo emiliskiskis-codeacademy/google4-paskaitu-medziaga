@@ -1,0 +1,44 @@
+#pirma {
+  border-width: 2px;
+  margin-bottom: 20px;
+}
+#pirma,
+#pirma th,
+#pirma td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#pirma th {
+  background-color: #bbb;
+  border-bottom-width: 2px;
+}
+#pirma th,
+#pirma td {
+  padding: 5px 10px;
+}
+#pirma td {
+  background-color: #eee;
+}
+#pirma tr:nth-child(2n + 1) > td {
+  background-color: #bbb;
+}
+#pirma tr:hover > td {
+  background-color: #ddd;
+}
+#pirma tr:nth-child(2n):hover > td {
+  background-color: #aaa;
+}
+#antra,
+#antra th,
+#antra td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#antra th,
+#antra td {
+  padding: 2px 4px;
+}
+
+#pirma > tbody > tr:nth-child(3) > td {
+  color: red;
+}
