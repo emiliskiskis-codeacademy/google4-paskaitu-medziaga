@@ -1,0 +1,28 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-content: space-around; */
+  /* gap: 20px; */
+  /* align-items: center; */
+  /* height: 2000px; */
+}
+
+.container > div {
+  /* flex: 1; */
+  width: 200px;
+}
+
+.container > div > p {
+  text-align: justify;
+  margin: 5px 0;
+}
+
+.container > div > img {
+  /* min-width: 250px; */
+  width: 100%;
+}
