@@ -1,0 +1,159 @@
+@font-face {
+  font-family: Inter;
+  src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+html {
+  font-family: Inter, sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: hsl(36, 100%, 99%);
+}
+
+header {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > nav {
+  display: flex;
+  gap: 32px;
+}
+
+header > nav > a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}
+
+header > .menu-open {
+  display: none;
+}
+
+.top-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.main-article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex: 5;
+}
+
+.main-article-heading,
+.main-article-abstract {
+  flex: 1;
+}
+
+.main-article-heading {
+  font-size: 3em;
+  font-weight: 800;
+  margin: 0;
+}
+
+.main-article-abstract {
+  color: hsl(236, 13%, 42%);
+}
+
+.main-article-abstract > p {
+  margin: 0;
+}
+
+.aside {
+  flex: 2;
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  padding: 0 24px;
+}
+
+.aside-heading {
+  color: hsl(35, 77%, 62%);
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.aside p {
+  font-size: 10pt;
+  letter-spacing: 0.5px;
+  color: hsl(233, 8%, 79%);
+}
+
+.aside > div:not(:last-child) {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.main-article > img {
+  width: 100%;
+}
+
+.bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.bottom-row > div {
+  flex: 1;
+}
+
+.bottom-row > div > img {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+.bottom-row > div > .index {
+  font-size: 2em;
+  color: hsl(233, 8%, 79%);
+  font-weight: 700;
+}
+
+.bottom-row > div > h3 {
+  font-weight: 800;
+  margin: 5px 0;
+}
+
+@media (max-width: 576px) {
+  body {
+    margin: 0 24px;
+  }
+
+  header {
+    padding: 24px 0;
+  }
+
+  header > nav {
+    display: none;
+  }
+
+  header > .menu-open {
+    display: inline;
+  }
+
+  .main-article {
+    gap: 16px;
+    flex-basis: 100%;
+  }
+
+  .main-article-heading,
+  .main-article-abstract {
+    flex-basis: 100%;
+  }
+
+  .aside {
+    flex-basis: 100%;
+    min-height: 450px;
+  }
+
+  .bottom-row > div {
+    flex-basis: 100%;
+  }
+}

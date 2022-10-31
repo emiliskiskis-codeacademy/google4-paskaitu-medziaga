@@ -1,16 +1,18 @@
 @font-face {
-  font-family: 'Kumbh Sans';
+  font-family: "Kumbh Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/kumbhsans/v12/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNorqSiNI.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v12/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNorqSiNI.ttf)
+    format("truetype");
 }
 @font-face {
-  font-family: 'Kumbh Sans';
+  font-family: "Kumbh Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/kumbhsans/v12/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNooNTSNI.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v12/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNooNTSNI.ttf)
+    format("truetype");
 }
 html {
   font-family: "Kumbh Sans", sans-serif;
@@ -25,8 +27,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
 }
+
 .card-name,
 .card-age {
   font-size: 18px;
@@ -60,7 +62,7 @@ html {
   align-self: stretch;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid hsl(0, 0%, 90%);
+  border-top: 2px solid hsl(0, 0%, 90%);
   padding: 24px;
   color: hsl(229, 23%, 23%);
 }
