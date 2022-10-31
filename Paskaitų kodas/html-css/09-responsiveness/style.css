@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  flex: 1;
+}
+
+.container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .container > div {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 700px) {
+  p {
+    color: red;
+  }
+}
+
+@media screen {
+  h1 {
+    color: red;
+  }
+}
+
+@media all and not (min-width: 480px) {
+  /* ekranas ne platesnis nei 480px */
+}
+
+@media (max-width: 400px), (min-width: 800px) {
+  /* ekranas iki 400px arba iki 800px */
+}
+
+@media (400px < width < 600px) {
+}
