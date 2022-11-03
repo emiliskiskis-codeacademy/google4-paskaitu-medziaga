@@ -13,11 +13,10 @@ console.log(studentId.textContent)
 studentId.textContent = "2200001"
 // studentId.colSpan = 2
 
-// neekvivalentu!
-// studentId.textContent = "2212345"
-// tekstas = "2212345"
 let tekstas = studentId.textContent
 tekstas = "2212345"
+// neekvivalentu!
+// studentId.textContent = "2212345"
 
 console.log(studentId.textContent)
 

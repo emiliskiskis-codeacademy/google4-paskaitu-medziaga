@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.row {
+	margin: 1rem 0;
+}
+
+.column {
+	background: navy;
+	color: white;
+	min-height: 200px;
+}
+
+#column-1 {
+	background: #ff3535; 
+}
+
+#column-2 {
+	background: teal;
+}
+
+#column-3 {
+	background: orange;
+}
+
+.hello {
+	text-align: center;
+	padding: 5rem 0;
+}
+
+.carousel-inner {
+	max-height: 500px !important;
+}
+
+i {
+	font-size: 4rem;
+}

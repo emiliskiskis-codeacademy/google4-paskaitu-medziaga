@@ -1,6 +1,6 @@
 /*
   [x] paprastos operacijos
-  [ ] kintamieji
+  [x] kintamieji
 */
 
 // vienos eilutės komentaras

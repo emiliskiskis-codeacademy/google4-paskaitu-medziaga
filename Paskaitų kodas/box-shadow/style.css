@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  padding: 60px;
+  gap: 20px;
+}
+
+.container > div {
+  flex: 1;
+  height: 300px;
+}
+
+.container > div:first-child {
+  box-shadow: black -4px 0 20px -5px, rgb(181, 181, 181) -4px -8px 20px -5px,
+    rgb(180, 180, 180) -4px 8px 20px -5px;
+  border-radius: 10px;
+}
+
+.container > div:last-child {
+  box-shadow: black 0 0 15px -5px;
+  border-radius: 10px;
+}

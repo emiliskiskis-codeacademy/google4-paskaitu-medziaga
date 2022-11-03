@@ -6,8 +6,8 @@
 [x] Rėmai, pozicijos: Elementų pozicionavimas, margin/padding, rėmeliai, float.
 [x] CSS tekstai, šriftai, spalvos: Darbas su teksto apipavidalinimu ir jo elementais.
 [x] HTML formos: Formos ir jų elementai
-[ ] Responsive design pagrindai: Kas yra responsive design, media queries ir mobilios versijos.
-[ ] Twitter Bootstrap karkasas: Kas yra Twitter Bootstrap, jo klasės ir elementai, jo pagrindu sukurtų šablonų pavyzdžiai.
+[x] Responsive design pagrindai: Kas yra responsive design, media queries ir mobilios versijos.
+[x] Twitter Bootstrap karkasas: Kas yra Twitter Bootstrap, jo klasės ir elementai, jo pagrindu sukurtų šablonų pavyzdžiai.
 
 
 2 dalis. JavaScript programavimo kalba
