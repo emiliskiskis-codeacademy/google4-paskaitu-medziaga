@@ -1,0 +1,3 @@
+body > button:first-of-type {
+  position: relative;
+}

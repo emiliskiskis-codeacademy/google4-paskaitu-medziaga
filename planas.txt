@@ -13,7 +13,7 @@
 2 dalis. JavaScript programavimo kalba
 
 [x] JavaScript sintaksė, stiliaus taisyklės
-[ ] Kintamieji, duomenų tipai, operatoriai, sąlygos sakiniai, funkcijos, ciklai
+[x] Kintamieji, duomenų tipai, operatoriai, sąlygos sakiniai, funkcijos, ciklai
 DOM manipuliavimas, interaktyvumas
 Klaidų valdymas (debugging, error handling)
 Objektinis programavimas su JavaScript
