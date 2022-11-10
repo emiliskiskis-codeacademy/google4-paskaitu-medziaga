@@ -1,19 +1,13 @@
-let lastTodoIndex = 1
-let newTodoText = "Todo Text"
+// Sekančio todo elemento indeksas
+let nextIndex = 1
+
+// Visų todo elementų divas
 const todos = document.getElementById("todos")
 
-const newTodo = `
-<div class="todo">
-  <input type="checkbox" id="todo-item-${lastTodoIndex}">
-  <span class="todo-text" id="todo-text-${lastTodoIndex}">${newTodoText}</span>
-</div>
-`
-
-todos.innerHTML += newTodo
-const newTodoInput = document.getElementById("todo-item-" + lastTodoIndex)
-
-function onTodoCheckboxChange(event, todoItemIndex) {
-  const todoText = document.getElementById("todo-text-" + todoItemIndex)
+// Kai paspausta varnelė
+function onTodoCheckboxChange(event, index) {
+  // Pasirenkame tekstą pagal indeksą
+  const todoText = document.getElementById("todo-text-" + index)
   if (event.target.checked) {
     todoText.style.textDecoration = "line-through"
   } else {
@@ -21,6 +15,28 @@ function onTodoCheckboxChange(event, todoItemIndex) {
   }
 }
 
-newTodoInput.addEventListener("change", e =>
-  onTodoCheckboxChange(e, lastTodoIndex)
-)
+// Kai paspaudė Add
+function onAddTodoFormSubmit(event) {
+  event.preventDefault()
+  const todoTextInput = event.target.elements.todoText
+  const newTodo = `
+<div class="todo">
+  <input type="checkbox" id="todo-item-${nextIndex}">
+  <span class="todo-text" id="todo-text-${nextIndex}">${todoTextInput.value}</span>
+</div>
+`
+  todos.innerHTML += newTodo
+  todoTextInput.value = ""
+
+  // Kiekvienam todo elementui uždedame event listenerį
+  for (let i = 1; i <= nextIndex; i++) {
+    const newTodoInput = document.getElementById("todo-item-" + i)
+    newTodoInput.addEventListener("change", e => onTodoCheckboxChange(e, i))
+  }
+  nextIndex++
+}
+
+// Pasirenkame formą ir jai uždedame submit listenerį
+document
+  .getElementById("addTodoForm")
+  .addEventListener("submit", onAddTodoFormSubmit)
