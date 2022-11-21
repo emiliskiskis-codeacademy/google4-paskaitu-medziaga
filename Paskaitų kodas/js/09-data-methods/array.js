@@ -145,3 +145,113 @@ console.log(names)
 // referenceStr          compareStr
 
 console.log(Number(false) - Number(true))
+
+// reduce
+
+const orders = [
+  {
+    createdAt: "2022-11-21T07:22:47.046Z",
+    userId: 28727,
+    sum: 91347,
+    id: "1"
+  },
+  {
+    createdAt: "2022-11-20T19:27:48.980Z",
+    userId: 44041,
+    sum: 64656,
+    id: "2"
+  },
+  {
+    createdAt: "2022-11-21T10:51:08.141Z",
+    userId: 30096,
+    sum: 49500,
+    id: "3"
+  },
+  {
+    createdAt: "2022-11-21T15:53:58.135Z",
+    userId: 51080,
+    sum: 76678,
+    id: "4"
+  },
+  {
+    createdAt: "2022-11-21T10:53:28.274Z",
+    userId: 41957,
+    sum: 80102,
+    id: "5"
+  },
+  {
+    createdAt: "2022-11-21T13:19:42.702Z",
+    userId: 10641,
+    sum: 30395,
+    id: "6"
+  },
+  {
+    createdAt: "2022-11-21T05:59:25.269Z",
+    userId: 4444,
+    sum: 50882,
+    id: "7"
+  },
+  {
+    createdAt: "2022-11-20T18:44:33.149Z",
+    userId: 26629,
+    sum: 58562,
+    id: "8"
+  },
+  {
+    createdAt: "2022-11-21T05:13:58.926Z",
+    userId: 84012,
+    sum: 75224,
+    id: "9"
+  },
+  {
+    createdAt: "2022-11-20T20:19:44.026Z",
+    userId: 44200,
+    sum: 17441,
+    id: "10"
+  }
+]
+
+let totalSum = 0
+orders.forEach(order => {
+  totalSum = totalSum + order.sum
+})
+console.log(totalSum)
+
+let totalProduct = 1
+orders.forEach(order => {
+  totalProduct = totalProduct * order.sum
+})
+console.log(totalProduct)
+
+const reduceSum = orders.reduce((acc, order) => acc + order.sum, 0)
+console.log(reduceSum)
+const reduceProduct = orders.reduce((acc, order) => acc * order.sum, 1)
+console.log(reduceProduct)
+
+console.log([5, 3, 6].reduce((acc, sk) => acc * sk))
+
+let grades = [5, 3, 6]
+
+function reduce(arr, callbackfn, initialValue) {
+  if (initialValue !== undefined) {
+    let acc = initialValue
+    arr.forEach((element, index) => {
+      acc = callbackfn(acc, element, index, arr)
+    })
+    return acc
+  } else {
+    let acc = arr[0]
+    arr.slice(1).forEach((value, index) => {
+      acc = callbackfn(acc, value, index, arr)
+    })
+    return acc
+  }
+}
+
+console.log(reduce(grades, (acc, value) => acc + value))
+
+function forEach(arr, callbackfn) {
+  for (let i = 0; i < arr.length; i++) {
+    callbackfn(arr[i], i, arr)
+  }
+}

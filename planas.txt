@@ -14,7 +14,7 @@
 
 [x] JavaScript sintaksė, stiliaus taisyklės
 [x] Kintamieji, duomenų tipai, operatoriai, sąlygos sakiniai, funkcijos, ciklai
-DOM manipuliavimas, interaktyvumas
+[x] DOM manipuliavimas, interaktyvumas
 Klaidų valdymas (debugging, error handling)
 Objektinis programavimas su JavaScript
 Paveldėjimas ir prototipai
