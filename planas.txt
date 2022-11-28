@@ -15,12 +15,12 @@
 [x] JavaScript sintaksė, stiliaus taisyklės
 [x] Kintamieji, duomenų tipai, operatoriai, sąlygos sakiniai, funkcijos, ciklai
 [x] DOM manipuliavimas, interaktyvumas
-Klaidų valdymas (debugging, error handling)
+[x] Klaidų valdymas (debugging, error handling)
 [x] Objektinis programavimas su JavaScript
 [x] Paveldėjimas ir prototipai
-Asinchroninis programavimas (promises, callbacks, listeners)
-Kreipimasis į serverį (JavaScript XML ir AJAX, JSONP)
-JavaScript APIs (canvas, geolocation, web workers, web sockets)
+[x] Asinchroninis programavimas (promises, callbacks, listeners)
+[x] Kreipimasis į serverį (JavaScript XML ir AJAX, JSONP)
 JavaScript modulių sistemos (Common JS, AMD, ES2015)
+JavaScript APIs (canvas, geolocation, web workers, web sockets)
 JavaScript aplikacijos testavimas
 Automatizavimas (Gulp, WebPack)
