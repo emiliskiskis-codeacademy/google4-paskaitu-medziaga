@@ -20,7 +20,7 @@
 [x] Paveldėjimas ir prototipai
 [x] Asinchroninis programavimas (promises, callbacks, listeners)
 [x] Kreipimasis į serverį (JavaScript XML ir AJAX, JSONP)
-JavaScript modulių sistemos (Common JS, AMD, ES2015)
+[x] JavaScript modulių sistemos (Common JS, AMD, ES2015)
 JavaScript APIs (canvas, geolocation, web workers, web sockets)
-JavaScript aplikacijos testavimas
+JavaScript aplikacijos testavimas (jest, cypress, selenium)
 Automatizavimas (Gulp, WebPack)
